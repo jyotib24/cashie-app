@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+.m-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: gainsboro;
+  font-weight: 700;
+  color: blue;
+}
+
+.m-navbar ul {
+  display: flex;
+}
+
+.left-nav li {
+  margin-right: 25px;
+}
+
+.right-nav li {
+  margin-left: 25px;
+}
+
+.m-sidebar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(33, 51, 83);
+}
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.linkse {
+  text-decoration: none;
+  color: navy;
+}
+
+.ui,
+.li {
+  text-decoration: none;
+}
+.sidebar-links {
+  margin-bottom: 50px;
+}
+
+.sidebar-links.active {
+  background-color: rgba(234, 81, 121, 1);
+  height: 10vh;
+}
+
+.c-btn {
+  color: #ffffff;
+  background: linear-gradient(
+    45deg,
+    rgba(234, 81, 121, 1) 0%,
+    rgba(172, 54, 115, 1) 100%
+  );
+}
+.form-errors {
+  color: red !important;
+}
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.avatar {
+  height: 60px;
+  border-radius: 50%;
+}
+.wrap {
+  height: 70vh;
+  padding: 20px;
+  overflow-y: auto;
+}
+.pagination-block {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.m-table th:hover {
+  background-color: rgb(0, 225, 255);
+  cursor: pointer;
+}
+.table-wrapper {
+  height: 80vh;
+  overflow-y: auto;
+}
+.search-bar-wrapper {
+  width: 50%;
+  margin: auto;
+}
+.table-wrapper {
+  width: 95%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.user-form {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+.m-card {
+  width: 400px;
+}
+.m-card img {
+  width: 100%;
+}
+.form-select {
+  width: 40%;
+}
+.dropdown {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-list li {
+  margin-left: 20px;
+}
+.m-navbar {
+  padding: 10px;
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(
+    45deg,
+    rgba(234, 81, 121, 1) 0%,
+    rgba(172, 54, 115, 1) 100%
+  );
+  margin-bottom: 0px;
+}
+.m-navbar .nav-list {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  height: 90px;
+  width: 90px;
+  border-radius: 10px;
+}
+.sidebar-links:hover {
+  background-color: #ea5179;
+}
+.sidebar-links.active {
+  background-color: indigo;
+}
+.d-sm-cards {
+  margin: 10px;
+  border-radius: 10px !important;
+  height: 120px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.d-sm-cards h3 {
+  color: white;
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+.d-sm-cards h5 {
+  color: white;
+  text-align: left;
+}
+.db-heading {
+  text-align: left;
+  margin: 10px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.maroon-card {
+  background: linear-gradient(
+    16deg,
+    rgba(234, 81, 121, 1) 0%,
+    rgba(172, 54, 115, 1) 100%
+  );
+}
+.indigo-card {
+  background: linear-gradient(
+    16deg,
+    rgba(195, 84, 215, 1) 0%,
+    rgba(136, 74, 206, 1) 100%
+  );
+}
+.orange-card {
+  background: linear-gradient(
+    16deg,
+    rgba(245, 90, 158, 1) 0%,
+    rgba(255, 155, 106, 1) 100%
+  );
+}
+.c-btn {
+  color: #ffffff;
+  background: linear-gradient(
+    45deg,
+    rgba(234, 81, 121, 1) 0%,
+    rgba(172, 54, 115, 1) 100%
+  );
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.p-errors {
+  color: red;
+}
+.tabs-wrapper {
+  flex-wrap: wrap;
+}
+.m-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.m-overlay.active {
+  z-index: 100;
+  background-color: black;
+  opacity: 0.8;
+} */
